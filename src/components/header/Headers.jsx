@@ -17,6 +17,7 @@ class Headers extends Component{
                     <img src={logo} alt="logo" />
                         <div>
                             <Link to='/'>Home</Link>
+                            <Link to='/about'>About</Link>
                             <Link to='/project'>Projects</Link>
                         </div>
                     </nav>

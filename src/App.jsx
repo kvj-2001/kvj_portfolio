@@ -2,6 +2,7 @@ import './App.css';
 
 /* eslint-disable no-unused-vars */
 import './App.css'
+import About from './components/pages/About.jsx';
 import Home from './components/pages/Home.jsx'
 import Project from './components/pages/Project.jsx'
 import Project_Single from './components/pages/Project_Single.jsx'
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path='/' Component={Home}/>
           <Route path='/home' Component={Home}/>
+          <Route path='/about' Component={About}/>
           <Route path='/project' Component={Project}/>
           <Route path='/totalDetails' Component={Project_Single}/>
         </Routes>

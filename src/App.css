@@ -33,13 +33,24 @@ nav img{
 }
 
 nav div{
-  width: 200px;
+  width: 25%;
 }
 nav a{
   /*background-color: blueviolet;*/
   font-size: 1.5rem;
   text-decoration:none;
   color:black;
+  padding: 10px;
+}
+nav a:hover {
+  transform: translateY(-2px);
+  color: rgb(28, 222, 28);
+  background-color: rgb(132, 124, 124);
+  padding: 10px;
+  border-radius: 5px;
+  width: initial;
+  height: 30px;
+  opacity: 0.9;
 }
 
 h1{
@@ -162,16 +173,6 @@ footer img{
   }
 }
 
-nav a:hover {
-  transform: translateY(-2px);
-  color: rgb(28, 222, 28);
-  background-color: rgb(132, 124, 124);
-  padding: 10px;
-  border-radius: 5px;
-  width: initial;
-  height: 30px;
-  opacity: 0.9;
-}
 
 footer a{
   padding:20px;
@@ -378,4 +379,76 @@ main p {
   text-align: center; /* Center align text for consistency */
 }
 
-     
+/* About CSS */
+
+#profile{
+  display: flex;
+
+}
+#profile h3{
+  font-size: 30px;
+}
+#profile p{
+  width: 800px;
+  padding: 10px;
+  padding-left: 0px;
+  padding-top: 100px;
+  font-size: 20px;
+}
+#profile img{
+  width: 250px;
+  height: 350px;
+  padding: 100px;
+  border-radius: 50%;
+}
+
+#education {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+#education table{
+  width: 80%;
+}
+#education th{
+  background-color: rgb(224, 223, 235);
+  padding: 30px;
+  font-size: 40px;
+  text-decoration: underline;
+}
+#education td{
+  border: 1px solid #ddd;
+  padding: 15px;
+  font-size: 20px;
+}
+#education tr{background-color: #f2f2f2;}
+
+#education tr:hover {background-color: #ddd;}
+
+#skill_heading{
+  justify-content: center;
+  align-items: center;
+  margin: 60px;
+}
+#skill_heading h3{
+  text-align: right;
+}
+#skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+#skills table {
+  width: 80%;
+}
+#heading{
+  padding: 30px;
+  font-size: 40px;
+  text-decoration: underline;
+}
+#skills img{
+  width: 100px;
+  height: 100px;
+}
