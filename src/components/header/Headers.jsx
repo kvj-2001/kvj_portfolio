@@ -3,6 +3,10 @@ import logo from './../../assets/images/icon.png'
 import { Link } from "react-router-dom";
 import {Component} from 'react'
 
+const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
 class Headers extends Component{
 
     constructor(props){

@@ -52,6 +52,12 @@ nav a:hover {
   height: 30px;
   opacity: 0.9;
 }
+@media(max-width:950px)  {
+  nav div {
+    width: auto;
+  }
+  
+}
 
 h1{
   font-size:45px;
