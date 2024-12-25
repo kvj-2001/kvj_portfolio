@@ -9,7 +9,7 @@ function Main(){
                 <div>
                 <h1 id = 'hi'>Hi, I am <br/></h1>
                     <h1>Veera Jayanth Kuppam </h1>
-                    <p>I'm an Engineering Graduate, and enthusiatic of learning the new skills and using them to solve the Industry Relevant Problems.</p>
+                    <p>I'm an Full Stack Developer, and enthusiatic of learning the new skills and using them to solve the Industry Relevant Problems.</p>
                     <a href={pdf} view="KVJ-OCT_Resume.pdf"><button className="button">View resume</button></a>
                     <a href={pdf} download="KVJ-OCT_Resume.pdf"><button className="button">Download resume</button></a>
                 </div>

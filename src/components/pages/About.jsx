@@ -36,7 +36,19 @@ function About(){
                     I am dedicated to continuous learning and staying updated with the latest industry trends to deliver high-quality, innovative, and reliable software solutions. 
                     Explore my work and see how I turn complex challenges into elegant, functional applications.
                     </p>
+                    <div>
                     <img src={photo} alt="" />
+                    </div>
+                </section>
+
+                <section id="experience">
+                    <p>
+                        <h3>Experience</h3>
+                        <ul>
+                            <li>Working as a Developer for Volvo Cars.</li>
+                            <li>Developing the backensd API's of the client</li>
+                        </ul>
+                    </p>
                 </section>
 
                 <br/>

@@ -1,12 +1,73 @@
-body{
-  background-size:cover;
-  background-repeat:no-repeat; 
-  background: rgb(224, 223, 235);
+:root{
+  --background: #f9f9f9;
+  --primary: #333333;
+  --accent: #61dafb;
+  --text: #444444;
+  --button-hover: #0056b3;
+
 }
+
+/* Global Styles */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins',Arial, Helvetica, sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+ul{
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
 
 #hero{
   font-weight: lighter;
   font-style: italic;
+}
+
+/* Nav Bar */
+nav{
+  padding:1rem 2rem;
+  box-sizing: border-box;
+}
+nav,nav div{
+  display:flex;
+  justify-content:space-between;
+  height:75px;
+  align-items:center;
+  background-color: var(--primary);
+  color: var(--accent);
+}
+nav img{
+  width: 80px;
+  height: 80px;
+  
+}
+
+nav div{
+  width: 25%;
+}
+nav a{
+  font-size: 1.5rem;
+  color:var(--accent);
+  padding: 0.5rem 1rem;
+  transition: backgroung-color 0.3s, color 0.3s;
+}
+nav a:hover {
+  background-color: var(--button-hover);
+  color: var(--background);
+  border-radius: 5px;
 }
 
 /* Adding comments at stops */
@@ -15,42 +76,6 @@ header{
   overflow:visible;
   width: 100%;
   height: 60px;
-}
-nav{
-  padding:0 30px;
-  box-sizing: border-box;
-}
-nav,nav div{
-  display:flex;
-  justify-content:space-between;
-  height:75px;
-  align-items:center;
-}
-nav img{
-  width: 80px;
-  height: 80px;
-  mix-blend-mode: multiply;
-}
-
-nav div{
-  width: 25%;
-}
-nav a{
-  /*background-color: blueviolet;*/
-  font-size: 1.5rem;
-  text-decoration:none;
-  color:black;
-  padding: 10px;
-}
-nav a:hover {
-  transform: translateY(-2px);
-  color: rgb(28, 222, 28);
-  background-color: rgb(132, 124, 124);
-  padding: 10px;
-  border-radius: 5px;
-  width: initial;
-  height: 30px;
-  opacity: 0.9;
 }
 @media(max-width:950px)  {
   nav div {
@@ -208,6 +233,7 @@ main p {
 
 .sec {
   display: flex;
+  position:static;
   justify-content: space-around;
   align-items: center;
   height: fit-content;
@@ -402,10 +428,29 @@ main p {
   font-size: 20px;
 }
 #profile img{
-  width: 250px;
-  height: 350px;
+  width: 450px;
+  height: 500px;
   padding: 100px;
   border-radius: 50%;
+}
+#profile div{
+  width: 420px;
+  height: 400px;
+  padding-top: 70px;
+}
+
+#experience p{
+  margin-left: 115px;
+  width: 100%;
+}
+#experience h3{
+  font-size: 25px;
+  padding: 5px;
+}
+#experience ul{
+  display: inline;
+  margin-left: 0px;
+  list-style-type: disc;
 }
 
 #education {
@@ -457,4 +502,64 @@ main p {
 #skills img{
   width: 100px;
   height: 100px;
+}
+
+@media(max-width:950px){
+  #profile img{
+      width: 350px;;
+      height:350px;  
+      mix-blend-mode: multiply; /* Changed the blend mode v1*/
+  }
+  #profile{
+      padding:15px 5px;
+      width: 80%;
+  }
+}
+@media(max-width:763px){
+  #profile{
+      flex-direction:column-reverse;
+  }
+  #profile img{
+      width: 400px;;
+      height:400px;
+      mix-blend-mode: multiply;
+  }
+  
+  #profile{
+      justify-content: center;
+      align-items:center;
+  }
+  #profile div{
+      text-align:center;
+  }
+}
+
+@media(max-width:950px) {
+  #education{
+    width: 80%;
+  }
+}
+@media(max-width:763px){
+  #education{
+    width: 80%;
+  }
+}
+
+@media(max-width:950px){
+  #skills{
+    width: 80%;
+  }
+
+}
+@media(max-width:763px){
+  #skills{
+    width : 80%;
+  }
+  #skills img{
+    width: 75px;
+    height: 75px
+  }
+  #skill th{
+    font-size: 5px;
+  }
 }

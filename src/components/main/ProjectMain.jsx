@@ -17,7 +17,7 @@ function ProjectMain(props){
         <section className="sec">
             <div className="pro">
                 <img src={props.image} alt="image" />
-                <h5><span>Project Title</span>: {props.title}</h5>
+                <h5>{props.title}</h5>
                 <p className="tech">{props.technology}</p>
                 <p className="description">{props.description}</p>
                 <button className="b2" onClick={totalDetails}>About Project</button>

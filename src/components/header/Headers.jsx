@@ -1,5 +1,5 @@
 import './../../App.css'
-import logo from './../../assets/images/icon.png'
+import logo from './../../assets/images/J_Logo.png'
 import { Link } from "react-router-dom";
 import {Component} from 'react'
 
@@ -17,12 +17,14 @@ class Headers extends Component{
         return(
             <>
                 <header>
-                    <nav>
+                    <nav className='navbar'>
                     <img src={logo} alt="logo" />
                         <div>
-                            <Link to='/'>Home</Link>
-                            <Link to='/about'>About</Link>
-                            <Link to='/project'>Projects</Link>
+                            <ul>
+                                <li><Link to='/'>Home</Link></li>
+                                <li><Link to='/about'>About</Link></li>
+                                <li><Link to='/project'>Projects</Link></li>
+                            </ul>
                         </div>
                     </nav>
                 </header>
